@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            .city {
+                background-color: rgb(7, 163, 20);
+                color: black;
+                padding: 10px;
+            }
+        </style>
+        <script type="text/javascript" scr="main.js"></script>
+
+    </head>
+
+    <body>
+        <center>
+            <div>
+                <img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.6435-9/86983750_509230993310808_6588301492136968192_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=eksx-MLmvK4AX9DMo8Z&_nc_ht=scontent-xsp1-1.xx&oh=7c66f4e1746fe945a6fe51f57a45f119&oe=617514CB" width="250" height="250">
+            </div>
+
+            <h2>PT 1</h2>
+            <h3>What are you doing now?</h3>
+            <form action="/action_page.php">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="date">Date</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message"><br><br>
+            </form>
+
+            <button onclick="myFunction1()">Send Message</button>
+        </center>
+    </body>
+
+    <script src="http://code.jquery.com/jquery-1.5.min.js">
+        function myFunction1(){
+            var x = document.getElementsByClassName("name");
+            for (var i = 0; i < x.length; i++){
+                x[i].style.display = "name";
+        }
+    }
+    </script>
+    
+    Name:<br> 
+    Date:<br>
+    <div id="sent" style="font-style: italic"> 
+        <div>Sent messages appear here.</div>
+    </div> 
+
+</html>
